@@ -66,7 +66,7 @@ $ vagrant plugin install vagrant-vbguest
 
 ### What jira affects **OPTIONAL**
 
- It would install on '/opt/atlassian/{jira-home,jira} Uses open-JDK only on this version 8.x and above, best to check OpenJdk compatibility list.
+ It would install on '/opt/atlassian/{jira} & '/var/atlassian/application-data' Uses open-JDK only on this version 8.x and above, best to check OpenJdk compatibility list.
 If there's more that they should know about, though, this is the place to mention:
 On most Centos systems its preferred to have a systemd controlled service, the example config is as below:
 ```
