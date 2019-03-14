@@ -1,0 +1,15 @@
+[Unit]
+Description=JIRA Service
+After=network.target iptables.service firewalld.service firewalld.service httpd.service
+
+[Service]
+Type=forking
+User=jira
+Environment=JRE_HOME=/usr/java/jdk1.8.0_74
+ExecStart=/opt/jira710/bin/start-jira.sh
+ExecStop=/opt/jira710/bin/stop-jira.sh
+ExecReload=/opt/jira710/bin/stop-jira.sh | sleep 60 | /opt/jira710/bin/start-jira.sh
+
+[Install]
+
+WantedBy=multi-user.target

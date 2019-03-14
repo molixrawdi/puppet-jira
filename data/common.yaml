@@ -1,0 +1,8 @@
+---
+jira::jirahome : '/opt/atlassian/jira-home'
+jira::jirainstall : '/opt/atlassian/jira'
+jira::execdir : '/vagrant'
+jira::dbhost : ''
+jira::pdbname : ''
+jira::adminuser : ''
+jira::adminpassword : ''
